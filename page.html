@@ -67,8 +67,9 @@ p{margin:0}
 .sub{margin-top:24px;font-size:clamp(17px,1.45vw,20px);max-width:56ch}
 .hero .btns{margin-top:32px}
 .note{margin-top:14px;font:500 14px/1.4 var(--display);color:var(--muted)}
-.portrait{position:relative;width:100%;max-width:400px;justify-self:end}
+.portrait{position:relative;width:100%;max-width:340px;justify-self:end}
 .portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:var(--r);background:var(--stone)}
+@media (min-width:901px){.portrait img{border-radius:24px}}
 .portrait figcaption{margin-top:12px;font:500 14px/1.4 var(--display);color:var(--muted)}
 .portrait figcaption b{color:var(--ink);font-weight:600}
 .trust{margin-top:clamp(40px,6vw,72px);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
