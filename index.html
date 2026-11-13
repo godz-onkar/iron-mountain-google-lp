@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Iron Mountain Google Page</title>
+<link rel="icon" href="assets/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#131313;--paper:#F3F2F2;--accent:#FF5B2A;--line:rgba(19,19,19,.12)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif}
+.top{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;padding:24px 28px 16px}
+h1{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:28px;letter-spacing:-.02em;margin:0}
+.top p{margin:6px 0 0;font-size:14px;color:#555;max-width:700px}
+.top a{color:var(--ink)}
+.tabs{display:flex;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px}
+.tabs button{border:0;background:transparent;font:600 14px Inter,sans-serif;padding:9px 16px;border-radius:999px;cursor:pointer;color:var(--ink)}
+.tabs button.on{background:var(--ink);color:#fff}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.stage{display:grid;grid-template-columns:1fr 430px;gap:28px;padding:8px 28px 40px;align-items:start}
+.stage.d{grid-template-columns:1fr}
+.stage.m{grid-template-columns:430px;justify-content:center}
+.stage.d .mob,.stage.m .desk{display:none}
+.label{font:600 12px Inter,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#666;margin:0 0 10px}
+.dframe{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(19,19,19,.08)}
+.bar{height:30px;display:flex;align-items:center;gap:6px;padding:0 12px;border-bottom:1px solid var(--line);background:#fafafa}
+.bar i{width:9px;height:9px;border-radius:50%;background:#ddd}
+.dwrap{position:relative;overflow:hidden}
+.dwrap iframe{position:absolute;top:0;left:0;width:1440px;height:900px;border:0;transform-origin:0 0}
+.phone{width:430px;background:#111;border-radius:48px;padding:20px;box-shadow:0 18px 50px rgba(19,19,19,.18)}
+.phone iframe{display:block;width:390px;height:844px;border:0;border-radius:30px;background:#fff}
+@media (max-width:1100px){.stage{grid-template-columns:1fr}.mob{justify-self:center}}
+@media (max-width:480px){.phone{width:100%;padding:10px;border-radius:30px}.phone iframe{width:100%}.stage{padding:8px 12px 32px}.top{padding:20px 16px 12px}}
+.notes{max-width:980px;margin:0 auto;padding:8px 28px 72px}
+.notes h2{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:24px;letter-spacing:-.02em;margin:40px 0 6px}
+.notes h3{font-family:"Inter Tight",Inter,sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em;margin:28px 0 8px}
+.notes p,.notes li{font-size:15px;line-height:1.6;color:#333}
+.notes p.lede{color:#555;margin-top:0}
+.notes ol,.notes ul{padding-left:20px;margin:8px 0}
+.notes li{margin:4px 0}
+.notes li b{color:var(--ink)}
+.notes .rule{border:0;border-top:1px solid var(--line);margin:40px 0 0}
+@media (max-width:480px){.notes{padding:8px 16px 56px}}
+</style>
+</head>
+<body>
+<div class="top">
+  <div>
+    <h1>Iron Mountain: Google page, orthopedic surgeon</h1>
+    <p>Layout preview of the default Google Ads page (Orthopedic Surgeon ad group), desktop at 1440 and mobile at 390. Scroll inside each frame. The mobile Call and Request bar appears once the hero buttons scroll away. Photos are Iron Mountain’s own, from ironmountainortho.com. <a href="page.html">Open the page on its own</a>.</p>
+  </div>
+  <div class="tabs" role="tablist" aria-label="View">
+    <button class="on" data-v="" role="tab">Both</button><button data-v="d" role="tab">Desktop</button><button data-v="m" role="tab">Mobile</button>
+  </div>
+</div>
+<div class="stage" id="stage">
+  <div class="desk">
+    <p class="label">Desktop · 1440</p>
+    <div class="dframe"><div class="bar"><i></i><i></i><i></i></div><div class="dwrap" id="dwrap"><iframe id="dfr" src="page.html" title="Desktop layout"></iframe></div></div>
+  </div>
+  <div class="mob">
+    <p class="label">Mobile · 390</p>
+    <div class="phone"><iframe src="page.html" title="Mobile layout"></iframe></div>
+  </div>
+</div>
+
+<section class="notes">
+  <hr class="rule">
+  <h2>Layout and build notes</h2>
+  <p class="lede">The page has one job: get someone who may need shoulder, knee or hip surgery to request a visit with Dr. Ayzenberg, or call. Every button does one of those two things. When you give feedback, name the section number.</p>
+
+  <h3>Page settings</h3>
+  <ul>
+    <li><b>URL:</b> drmarkayzenberg.com/home (the Orthopedic Surgeon ad group and the default page). The shoulder, knee, hip and sports pages are clones with the lines in the copy doc’s table changed.</li>
+    <li><b>Title:</b> Orthopedic Surgeon in Huntingdon Valley, PA | Dr. Mark Ayzenberg</li>
+    <li><b>Description:</b> Shoulder, knee and hip surgery with Dr. Mark Ayzenberg in Huntingdon Valley, PA, just outside Philadelphia. Rated 5.0 across 400+ Google reviews.</li>
+    <li><b>Robots:</b> the preview is noindex. The live page follows the current page’s setting.</li>
+  </ul>
+
+  <h3>How the page is built</h3>
+  <ol>
+    <li><b>Header (sticky).</b> Iron Mountain logo left (without the Joint Preservation Center lockup, which is an open decision for Kyle and Mark). Phone number with “Weekdays, 8 to 4” and the Request button on the right. On mobile: logo and tap-to-call number only.</li>
+    <li><b>Hero.</b> Desktop is a 7/5 split: kicker, the two-size headline, subhead, Request and Call buttons, the hours line on the left; Dr. Ayzenberg’s portrait (4:5) on the right. On mobile the portrait sits under the buttons, so both buttons are on the first screen. Trust bar under the hero: 5.0 from 400+ Google reviews, double board-certified, fellowship-trained, former Philadelphia Wings team physician (one row on desktop, 2 by 2 on mobile).</li>
+    <li><b>When it’s time to get it fixed.</b> 5/7 split. Heading and the “physical therapy, cortisone, MRI” lead on the left; the five-line checklist on the right with hairline rows; the “Not sure yet” line under it. No button here on purpose.</li>
+    <li><b>Meet Dr. Ayzenberg.</b> 5/7 split: the 6,000-mile patient video on the left (labeled slot in this preview), the three paragraphs and the Request button on the right.</li>
+    <li><b>Reviews.</b> Stone band (the first of two background changes). Peter T.’s review set large as the lead quote, with his Google rating beside it; then three reviews in a row (Healthgrades “walking,” the physical therapist, Jordan K.); then three patient video slots (Bob, Sharon, John). Three patient reviews to one physical therapist.</li>
+    <li><b>What he repairs.</b> The page’s dense passage: three tight columns (Shoulder, Knee, Hip) under a heavy rule, then “He doesn’t do knee or hip replacements.”</li>
+    <li><b>How Dr. Ayzenberg gets you back.</b> Four numbered rows (01 to 04) with hairlines, not cards.</li>
+    <li><b>How long until you’re back.</b> Dark band (the second background change, and the page’s one big moment). The recovery figures sit on a ridge line that climbs left to right, with a marker over each figure: the page’s mountain motif. On mobile it becomes a vertical line with three markers. Request button at the end.</li>
+    <li><b>Your first visit.</b> The five “you’ll leave with” items on the left; the three steps as a numbered track, the coverage line, and Request plus Call on the right.</li>
+    <li><b>Questions before you book.</b> Six questions; the first is open.</li>
+    <li><b>Close.</b> The office exterior photo, the peaked rule, “See the surgeon who’ll do your surgery,” Request and Call, then name, address, hours, phone and a Google Maps link matching the Business Profile.</li>
+    <li><b>Footer.</b> Logo, copyright, privacy policy and the in-person exam line.</li>
+    <li><b>Mobile bar.</b> Call and Request My Visit, fixed to the bottom once the hero buttons scroll away.</li>
+  </ol>
+
+  <h3>Design choices</h3>
+  <ul>
+    <li><b>Red means act.</b> The brand red (#8B0507) appears only on Request buttons and links. Call buttons are outlined, so the eye learns the main action.</li>
+    <li><b>Brand fonts and colors</b> from the live page and the brand guidelines: Poppins (the brand’s own font) for headings and buttons, a calm serif (Newsreader) for reading, warm off-white background, the logo’s slate grey for the ridge line. The logo’s Nexa font is licensed; switch the headings to Nexa in GHL only if Iron Mountain holds the license.</li>
+    <li><b>Real photos only:</b> Dr. Ayzenberg’s 2024 headshot and the office exterior, both from ironmountainortho.com. The anatomical illustration on today’s page is gone. The site’s ROSA robot photos are left out (that system is mostly for knee replacements, which he doesn’t do).</li>
+    <li><b>One phone number</b> everywhere, six tap-to-call links. Every Request button opens the survey.</li>
+  </ul>
+
+  <h3>What this preview leaves out</h3>
+  <ul>
+    <li><b>Patient videos.</b> The four slots (Bob, Sharon, John, the 6,000-mile patient) are labeled placeholders here. The video files are on the current page; the links are in the vault copy doc, not on this public preview.</li>
+    <li><b>The survey.</b> Request buttons open a note explaining what happens on the live page. Nothing is submitted.</li>
+  </ul>
+
+  <h3>Before this goes live</h3>
+  <ul>
+    <li><b>Hours.</b> The site says 8 to 4; the office has also said 9 to 4. Confirm with the office (Emily).</li>
+    <li><b>“Usually within a couple of weeks”</b> in the FAQ: confirm with the office, or use “Our team gives you the date on your call” alone.</li>
+    <li><b>Header lockup.</b> Kyle and Mark decide whether “Member of The Joint Preservation Center” stays.</li>
+    <li><b>Survey order.</b> The contact-first Google copy of the survey waits on Kyle’s OK.</li>
+    <li><b>Tracking.</b> Keep GTM-P3K4J5JX and the qualified-lead tag on the new page; every call link carries a position tag (header, hero, visit, close, address, sticky).</li>
+    <li><b>QA.</b> Run the funnel QA skill and check the built page at 390 and 1440 before switching the ads.</li>
+  </ul>
+</section>
+<script>
+const stage=document.getElementById('stage'),wrap=document.getElementById('dwrap'),fr=document.getElementById('dfr');
+const views={'':'', 'd':'#desktop', 'm':'#mobile'};
+function fit(){const s=Math.min(1,wrap.clientWidth/1440);fr.style.transform='scale('+s+')';wrap.style.height=(900*s)+'px';}
+function setView(v){
+  document.querySelectorAll('.tabs button').forEach(x=>{const on=x.dataset.v===v;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
+  stage.className='stage'+(v?' '+v:'');requestAnimationFrame(fit);
+}
+new ResizeObserver(fit).observe(wrap);fit();
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{setView(b.dataset.v);history.replaceState(null,'',views[b.dataset.v]||location.pathname)});
+const h=location.hash.replace('#','');setView(h==='desktop'?'d':h==='mobile'?'m':'');
+</script>
+</body>
+</html>
