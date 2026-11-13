@@ -14,7 +14,7 @@
 <link rel="preload" as="image" href="assets/dr-ayzenberg-portrait.jpg">
 <style>
 :root{
-  --paper:#F8F6F2; --stone:#EFEAE3; --ink:#26211F; --body:#4B4440; --muted:#6E6560;
+  --paper:#F8F6F2; --stone:#E9E1D5; --ink:#26211F; --body:#4B4440; --muted:#6E6560;
   --rule:rgba(38,33,31,.14); --rule-ink:rgba(248,246,242,.18);
   --red:#8B0507; --red-deep:#6E0405; --gold:#C98D00; --slate:#5D6066;
   --display:"Poppins",system-ui,sans-serif; --serif:"Newsreader",Georgia,serif;
@@ -122,7 +122,10 @@ p{margin:0}
 .vslot p span{display:block;font-size:12px;color:rgba(237,231,225,.65);margin-top:2px}
 
 /* 4: reviews */
-.reviews{background:var(--stone)}
+.reviews,.tone{background:var(--stone);--muted:#615954}
+.sec .h2::before,.reviews .rev-head>div::before{content:"";display:block;width:56px;height:12px;margin-bottom:20px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 12' fill='none' stroke='%235D6066' stroke-width='1.5'%3E%3Cpath d='M0 11h20l7-9 5 5 4-3 5 7h15'/%3E%3C/svg%3E") no-repeat}
+.reviews .h2::before,.close .h2::before{display:none}
+.rev-cta{margin-top:clamp(32px,4vw,48px)}
 .rev-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:clamp(32px,4vw,56px)}
 .rev-head a{font:600 15px/1.4 var(--display);color:var(--red);text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:2px}
 .rev-head a:hover{color:var(--red-deep)}
@@ -205,7 +208,6 @@ p{margin:0}
 @media (max-width:900px){.visit-grid{grid-template-columns:1fr}}
 
 /* 8: FAQ */
-.faq{border-top:1px solid var(--rule)}
 .faq-grid{display:grid;grid-template-columns:4fr 8fr;gap:clamp(32px,6vw,96px)}
 .faq details{border-bottom:1px solid var(--rule)}
 .faq details:first-child{border-top:1px solid var(--rule)}
@@ -217,7 +219,7 @@ p{margin:0}
 @media (max-width:900px){.faq-grid{grid-template-columns:1fr}}
 
 /* 9: close */
-.close{background:var(--paper);border-top:1px solid var(--rule)}
+.close{background:var(--paper)}
 .close-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px);align-items:center}
 .close-grid img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
 .peak{display:block;width:120px;height:24px;margin-bottom:20px;color:var(--slate)}
@@ -231,7 +233,7 @@ p{margin:0}
 @media (max-width:900px){.close-grid{grid-template-columns:1fr}.close-grid img{max-width:440px;aspect-ratio:3/2;order:2}.nap{grid-template-columns:1fr}}
 
 /* Footer */
-.foot{border-top:1px solid var(--rule);padding:40px 0 calc(40px + env(safe-area-inset-bottom))}
+.foot{background:var(--stone);--muted:#615954;padding:40px 0 calc(40px + env(safe-area-inset-bottom))}
 .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:start}
 .foot img{height:40px;width:auto}
 .foot p{font:500 13px/1.6 var(--display);color:var(--muted);max-width:62ch}
@@ -305,7 +307,7 @@ dialog::backdrop{background:rgba(38,33,31,.55)}
 </section>
 
 <!-- 2. When it's time -->
-<section class="sec">
+<section class="sec tone">
   <div class="wrap fix-grid">
     <div class="fade">
       <h2 class="h2">When it’s time to get it fixed</h2>
@@ -372,6 +374,7 @@ dialog::backdrop{background:rgba(38,33,31,.55)}
       <div class="vslot" role="img" aria-label="Patient video placeholder: John"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12-7.5z"/></svg></span><p>John, back to being an athlete after knee surgery<span>Plays on the live page</span></p></div>
     </div>
     <p class="fine">Individual results vary.</p>
+    <div class="btns rev-cta"><a class="btn btn-req" href="#request" data-req>Request My Visit With Dr. Ayzenberg</a></div>
   </div>
 </section>
 
@@ -391,7 +394,7 @@ dialog::backdrop{background:rgba(38,33,31,.55)}
 </section>
 
 <!-- 6. How he gets you back -->
-<section class="sec" style="padding-bottom:clamp(48px,7vw,96px);border-top:1px solid var(--rule)">
+<section class="sec tone">
   <div class="wrap how-grid">
     <div class="fade"><h2 class="h2">How Dr. Ayzenberg gets you back</h2></div>
     <ol class="folios fade">
@@ -455,7 +458,7 @@ dialog::backdrop{background:rgba(38,33,31,.55)}
 </section>
 
 <!-- 8. FAQ -->
-<section class="sec faq">
+<section class="sec faq tone">
   <div class="wrap faq-grid">
     <div><h2 class="h2">Questions before you book</h2></div>
     <div>
