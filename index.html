@@ -76,7 +76,7 @@ h1{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:28px;let
 <section class="notes">
   <hr class="rule">
   <h2>Layout and build notes</h2>
-  <p class="lede">For Ahmed (GHL build) and Angeles (visual QA). This preview is the orthopedic page. The shoulder, knee, hip and sports pages are clones with the lines in the copy doc’s “What changes from page to page” table swapped. When you give feedback, name the section number. Every link below was checked on November 13, 2026.</p>
+  <p class="lede">For Ahmed (GHL build) and Angeles (visual QA). This preview is the orthopedic page. The shoulder, knee, hip and sports pages are clones with the lines in the copy doc’s “What changes from page to page” table swapped. All five pages’ copy plus these notes are in one file: <a href="https://github.com/godz-onkar/iron-mountain-google-lp/blob/main/iron-mountain-google-pages-build-file.md">iron-mountain-google-pages-build-file.md</a>. When you give feedback, name the section number. Every link below was checked on November 13, 2026.</p>
 
   <h3>Images</h3>
   <p>Use the cropped files from this preview; the originals on ironmountainortho.com are there in case a fresh crop is needed.</p>
@@ -119,8 +119,8 @@ h1{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:28px;let
     <li><b>Title and description</b> are written at the top of each page in the copy doc. This page: “Orthopedic Surgeon in Huntingdon Valley, PA | Dr. Mark Ayzenberg” / “Shoulder, knee and hip surgery with Dr. Mark Ayzenberg in Huntingdon Valley, PA, just outside Philadelphia. Rated 5.0 across 400+ Google reviews.”</li>
     <li><b>Robots:</b> same as today’s /home. Only this preview is noindex.</li>
     <li><b>Tracking:</b> keep GTM-P3K4J5JX on every page. The Google conversion fires when the URL contains <code>ty-qualified</code>, so keep today’s thank-you pages and their URLs as they are.</li>
-    <li><b>Call links:</b> one number, (215) 821-7059, as <code>tel:+12158217059</code>, in six places: header, hero, Your First Visit, close, address block, mobile bar. Give each its own ID (<code>call-header</code>, <code>call-hero</code>, <code>call-visit</code>, <code>call-close</code>, <code>call-nap</code>, <code>call-sticky</code>) so GTM can tell them apart.</li>
-    <li><b>Survey:</b> every Request button opens Iron Mountain - Lead Gen Survey V1 in a popup, with the same thank-you pages as today. The Google copy of the survey (contact first, then joint, how long, imaging, insurance, distance) waits on Kyle’s OK.</li>
+    <li><b>Call links:</b> one number, (215) 821-7059, as <code>tel:+12158217059</code>, in six places: header, hero, Your First Visit, close, address block, mobile bar. Give each its own ID (<code>call-header</code>, <code>call-hero</code>, <code>call-visit</code>, <code>call-close</code>, <code>call-nap</code>, <code>call-sticky</code>) so GTM can tell them apart. If the Google Ads call tracking number is live by build time, use it on all six instead of the office line; if not, build with (215) 821-7059 and swap it in later.</li>
+    <li><b>Popup: the survey form only.</b> Every Request button opens a popup that holds just the survey form, Iron Mountain - Lead Gen Survey V1: no heading, text, image or other fields around it. Its thank-you pages stay as they are today.</li>
   </ul>
 
   <h3>Fonts and colors</h3>
@@ -166,8 +166,7 @@ h1{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:28px;let
     <li><b>Hours:</b> the site says 8 to 4; the office has also said 9 to 4. Emily confirms.</li>
     <li><b>“Usually within a couple of weeks”</b> in the FAQ: Emily confirms with the office, or use “Our team gives you the date on your call” alone.</li>
     <li><b>Knee page photo:</b> a second photo of Dr. Ayzenberg. Emily asks the office.</li>
-    <li><b>Survey order:</b> the contact-first Google copy waits on Kyle’s OK.</li>
-  </ul>
+      </ul>
 
   <h3>Before going live</h3>
   <ul>
