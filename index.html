@@ -42,6 +42,13 @@ h1{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:28px;let
 .notes li{margin:4px 0}
 .notes li b{color:var(--ink)}
 .notes .rule{border:0;border-top:1px solid var(--line);margin:40px 0 0}
+.notes .tw{overflow-x:auto;margin:8px 0 12px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.notes table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.45}
+.notes th,.notes td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+.notes th{font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#666;background:#fafafa}
+.notes tr:last-child td{border-bottom:0}
+.notes td a{color:var(--ink);word-break:break-all}
+.notes code{font-size:13px;background:rgba(19,19,19,.06);padding:1px 5px;border-radius:4px}
 @media (max-width:480px){.notes{padding:8px 16px 56px}}
 </style>
 </head>
@@ -69,55 +76,103 @@ h1{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:28px;let
 <section class="notes">
   <hr class="rule">
   <h2>Layout and build notes</h2>
-  <p class="lede">The page has one job: get someone who may need shoulder, knee or hip surgery to request a visit with Dr. Ayzenberg, or call. Every button does one of those two things. When you give feedback, name the section number.</p>
+  <p class="lede">For Ahmed (GHL build) and Angeles (visual QA). This preview is the orthopedic page. The shoulder, knee, hip and sports pages are clones with the lines in the copy doc’s “What changes from page to page” table swapped. When you give feedback, name the section number. Every link below was checked on November 13, 2026.</p>
+
+  <h3>Images</h3>
+  <p>Use the cropped files from this preview; the originals on ironmountainortho.com are there in case a fresh crop is needed.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Image</th><th>Where</th><th>Pages</th><th>File to use</th><th>Original</th></tr></thead>
+    <tbody>
+      <tr><td>Dr. Ayzenberg portrait, white coat (2024), 4:5, 999 × 1250</td><td>Hero</td><td>All five</td><td><a href="assets/dr-ayzenberg-portrait.jpg">dr-ayzenberg-portrait.jpg</a></td><td><a href="https://ironmountainortho.com/wp-content/uploads/2026/01/ayzenberg-headshot_2024.webp">ayzenberg-headshot_2024.webp</a></td></tr>
+      <tr><td>Office exterior, 2138 County Line Rd, 866 × 1300 (shown at 4:5)</td><td>Close</td><td>All five</td><td><a href="assets/office-exterior.jpg">office-exterior.jpg</a></td><td><a href="https://ironmountainortho.com/wp-content/uploads/2026/01/iron-mountain-hero-01.webp">iron-mountain-hero-01.webp</a></td></tr>
+      <tr><td>Iron Mountain logo without the JPC lockup, 650 × 216</td><td>Header, footer</td><td>All five</td><td><a href="assets/iron-mountain-logo.png">iron-mountain-logo.png</a></td><td><a href="https://ironmountainortho.com/wp-content/uploads/2026/01/logo-1.png">logo-1.png</a></td></tr>
+      <tr><td>Favicon</td><td>Browser tab</td><td>All five</td><td><a href="assets/favicon.png">favicon.png</a></td><td>Cut from the logo mark</td></tr>
+      <tr><td>Second photo of Dr. Ayzenberg (with a patient or in the office)</td><td>Meet Dr. Ayzenberg</td><td>Knee only</td><td colspan="2">Not supplied yet: Emily asks the office</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Patient videos</h3>
+  <p>All four are already in Iron Mountain’s GHL media library and play on today’s drmarkayzenberg.com/home, so nothing needs re-uploading: pick them from Media. The direct links are in the vault copy doc (03-CLIENTS/dr-mark-ayzenberg/deliverables/google-landing-page-copy-2026-11-12.md, Build notes, Patient videos), not on this public preview.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Video</th><th>Where</th><th>Pages</th><th>Size</th></tr></thead>
+    <tbody>
+      <tr><td>Patient who flew 6,000 miles for a latissimus tendon repair</td><td>Meet Dr. Ayzenberg</td><td>Orthopedic, shoulder, hip, sports</td><td>63 MB</td></tr>
+      <tr><td>Bob, 6 days after arthroscopic rotator cuff repair</td><td>Reviews</td><td>Orthopedic, shoulder, sports</td><td>20 MB</td></tr>
+      <tr><td>Sharon, 1 month after repair of a massive rotator cuff tear</td><td>Reviews</td><td>Orthopedic, shoulder, hip</td><td>26 MB</td></tr>
+      <tr><td>John, back to being an athlete after knee surgery</td><td>Reviews</td><td>Orthopedic, knee, hip, sports</td><td>26 MB</td></tr>
+    </tbody>
+  </table></div>
+  <p>Click to play, never autoplay, no preloading. Each shows a still frame of the patient with the caption under it.</p>
 
   <h3>Page settings</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Page</th><th>URL</th><th>Ad group</th></tr></thead>
+    <tbody>
+      <tr><td>Orthopedic (default)</td><td>drmarkayzenberg.com/home</td><td>Orthopedic Surgeon</td></tr>
+      <tr><td>Shoulder</td><td>drmarkayzenberg.com/shoulder-surgeon</td><td>Shoulder</td></tr>
+      <tr><td>Knee</td><td>drmarkayzenberg.com/knee-surgeon</td><td>Knee</td></tr>
+      <tr><td>Hip</td><td>drmarkayzenberg.com/hip-surgeon</td><td>Hip</td></tr>
+      <tr><td>Sports</td><td>drmarkayzenberg.com/sports-surgeon</td><td>Sports Surgeon</td></tr>
+    </tbody>
+  </table></div>
   <ul>
-    <li><b>URL:</b> drmarkayzenberg.com/home (the Orthopedic Surgeon ad group and the default page). The shoulder, knee, hip and sports pages are clones with the lines in the copy doc’s table changed.</li>
-    <li><b>Title:</b> Orthopedic Surgeon in Huntingdon Valley, PA | Dr. Mark Ayzenberg</li>
-    <li><b>Description:</b> Shoulder, knee and hip surgery with Dr. Mark Ayzenberg in Huntingdon Valley, PA, just outside Philadelphia. Rated 5.0 across 400+ Google reviews.</li>
-    <li><b>Robots:</b> the preview is noindex. The live page follows the current page’s setting.</li>
+    <li><b>Title and description</b> are written at the top of each page in the copy doc. This page: “Orthopedic Surgeon in Huntingdon Valley, PA | Dr. Mark Ayzenberg” / “Shoulder, knee and hip surgery with Dr. Mark Ayzenberg in Huntingdon Valley, PA, just outside Philadelphia. Rated 5.0 across 400+ Google reviews.”</li>
+    <li><b>Robots:</b> same as today’s /home. Only this preview is noindex.</li>
+    <li><b>Tracking:</b> keep GTM-P3K4J5JX on every page. The Google conversion fires when the URL contains <code>ty-qualified</code>, so keep today’s thank-you pages and their URLs as they are.</li>
+    <li><b>Call links:</b> one number, (215) 821-7059, as <code>tel:+12158217059</code>, in six places: header, hero, Your First Visit, close, address block, mobile bar. Give each its own ID (<code>call-header</code>, <code>call-hero</code>, <code>call-visit</code>, <code>call-close</code>, <code>call-nap</code>, <code>call-sticky</code>) so GTM can tell them apart.</li>
+    <li><b>Survey:</b> every Request button opens Iron Mountain - Lead Gen Survey V1 in a popup, with the same thank-you pages as today. The Google copy of the survey (contact first, then joint, how long, imaging, insurance, distance) waits on Kyle’s OK.</li>
   </ul>
 
-  <h3>How the page is built</h3>
+  <h3>Fonts and colors</h3>
+  <ul>
+    <li><b>Headings, buttons, labels:</b> Poppins 600 to 700 (500 for the second half of the headline). <b>Body:</b> Newsreader 400, 18 px on desktop. Both are Google Fonts. The logo’s Nexa font is licensed; use it for headings only if Iron Mountain holds the license.</li>
+    <li><b>Colors:</b> background #F8F6F2, stone band #EFEAE3, headings #26211F, body #4B4440, small text #6E6560, red #8B0507 (hover #6E0405), stars #C98D00, ridge line #5D6066.</li>
+    <li><b>Red means act:</b> red appears only on Request buttons and links. Call buttons are outlined, so the eye learns the main action.</li>
+    <li><b>Corners:</b> buttons 6 px, photos and video tiles 4 px, the desktop hero portrait 24 px.</li>
+    <li><b>Real photos only.</b> The anatomical illustration on today’s page goes. The site’s ROSA robot photos stay out (that system is mostly for knee replacements, which he doesn’t do).</li>
+  </ul>
+
+  <h3>Layout, section by section</h3>
+  <p>Content max width 1200 px; side padding 20 to 40 px.</p>
   <ol>
-    <li><b>Header (sticky).</b> Iron Mountain logo left (without the Joint Preservation Center lockup, which is an open decision for Kyle and Mark). Phone number with “Weekdays, 8 to 4” and the Request button on the right. On mobile: logo and tap-to-call number only.</li>
-    <li><b>Hero.</b> Desktop is a 7/5 split: kicker, the two-size headline, subhead, Request and Call buttons, the hours line on the left; Dr. Ayzenberg’s portrait (4:5) on the right. On mobile the portrait sits under the buttons, so both buttons are on the first screen. Trust bar under the hero: 5.0 from 400+ Google reviews, double board-certified, fellowship-trained, former Philadelphia Wings team physician (one row on desktop, 2 by 2 on mobile).</li>
-    <li><b>When it’s time to get it fixed.</b> 5/7 split. Heading and the “physical therapy, cortisone, MRI” lead on the left; the five-line checklist on the right with hairline rows; the “Not sure yet” line under it. No button here on purpose.</li>
-    <li><b>Meet Dr. Ayzenberg.</b> 5/7 split: the 6,000-mile patient video on the left (labeled slot in this preview), the three paragraphs and the Request button on the right.</li>
-    <li><b>Reviews.</b> Stone band (the first of two background changes). Peter T.’s review set large as the lead quote, with his Google rating beside it; then three reviews in a row (Healthgrades “walking,” the physical therapist, Jordan K.); then three patient video slots (Bob, Sharon, John). Three patient reviews to one physical therapist.</li>
-    <li><b>What he repairs.</b> The page’s dense passage: three tight columns (Shoulder, Knee, Hip) under a heavy rule, then “He doesn’t do knee or hip replacements.”</li>
-    <li><b>How Dr. Ayzenberg gets you back.</b> Four numbered rows (01 to 04) with hairlines, not cards.</li>
-    <li><b>How long until you’re back.</b> Dark band (the second background change, and the page’s one big moment). The recovery figures sit on a ridge line that climbs left to right, with a marker over each figure: the page’s mountain motif. On mobile it becomes a vertical line with three markers. Request button at the end.</li>
-    <li><b>Your first visit.</b> The five “you’ll leave with” items on the left; the three steps as a numbered track, the coverage line, and Request plus Call on the right.</li>
-    <li><b>Questions before you book.</b> Six questions; the first is open.</li>
-    <li><b>Close.</b> The office exterior photo, the peaked rule, “See the surgeon who’ll do your surgery,” Request and Call, then name, address, hours, phone and a Google Maps link matching the Business Profile.</li>
+    <li><b>Header (sticky).</b> Logo left; phone number with “Weekdays, 8 to 4” and the Request button right. Phone: logo and tap-to-call number only.</li>
+    <li><b>Hero.</b> Text left: small line, the two-size headline, subhead, Request and Call, the hours line. Dr. Ayzenberg’s portrait right, 340 px wide with rounded corners, its bottom level with the buttons. The headline’s first half is large (about 50 px); “then plans your surgery and recovery around your life” sits on its own line, smaller (about 28 px). Phone: the portrait goes under the buttons at full width, so both buttons show on the first screen of a 390 px phone. Trust bar under the hero (one row on desktop, 2 by 2 on the phone).</li>
+    <li><b>When it’s time to get it fixed.</b> Heading and lead left; the five-line checklist right with thin dividing lines; the “Not sure yet” line under it. No button here on purpose.</li>
+    <li><b>Meet Dr. Ayzenberg.</b> The 6,000-mile video left (the second photo on the knee page); the three paragraphs and the Request button right.</li>
+    <li><b>Reviews.</b> Stone background. Peter T.’s review set large as the lead, with the Google rating beside it; three more reviews in a row; then the page’s patient videos as click-to-play tiles. Three patient reviews to one physical therapist on every page.</li>
+    <li><b>What he repairs.</b> Three tight columns (the page’s joint first) under a heavy rule, then “He doesn’t do knee or hip replacements.”</li>
+    <li><b>How Dr. Ayzenberg gets you back.</b> Four numbered rows (01 to 04) with thin dividing lines, not cards.</li>
+    <li><b>How long until you’re back.</b> Dark background. The recovery figures sit on a line that climbs left to right with a dot over each figure (the mountain motif); on the phone it becomes a vertical line with three dots. Request button at the end. If GHL can’t build the line, put the three figures in a row on the dark background.</li>
+    <li><b>Your first visit.</b> The “you’ll leave with” list left; the three numbered steps, the coverage line, and Request plus Call right.</li>
+    <li><b>Questions before you book.</b> Six questions as an accordion, the first open.</li>
+    <li><b>Close.</b> Office photo; “See the surgeon who’ll do your surgery”; Request and Call; then name, address, hours, phone and a Google Maps link, matching the Google Business Profile exactly.</li>
     <li><b>Footer.</b> Logo, copyright, privacy policy and the in-person exam line.</li>
-    <li><b>Mobile bar.</b> Call and Request My Visit, fixed to the bottom once the hero buttons scroll away.</li>
+    <li><b>Mobile bar.</b> Call and Request My Visit, fixed to the bottom once the hero buttons scroll out of view. Phone only.</li>
   </ol>
 
-  <h3>Design choices</h3>
+  <h3>Changes from today’s /home</h3>
   <ul>
-    <li><b>Red means act.</b> The brand red (#8B0507) appears only on Request buttons and links. Call buttons are outlined, so the eye learns the main action.</li>
-    <li><b>Brand fonts and colors</b> from the live page and the brand guidelines: Poppins (the brand’s own font) for headings and buttons, a calm serif (Newsreader) for reading, warm off-white background, the logo’s slate grey for the ridge line. The logo’s Nexa font is licensed; switch the headings to Nexa in GHL only if Iron Mountain holds the license.</li>
-    <li><b>Real photos only:</b> Dr. Ayzenberg’s 2024 headshot and the office exterior, both from ironmountainortho.com. The anatomical illustration on today’s page is gone. The site’s ROSA robot photos are left out (that system is mostly for knee replacements, which he doesn’t do).</li>
-    <li><b>One phone number</b> everywhere, six tap-to-call links. Every Request button opens the survey.</li>
+    <li><b>Five pages, cloned from one.</b> Build this page first, clone it four times, then change only the lines in the copy doc’s table. Each Google ad group’s final URL points to its page.</li>
+    <li><b>Hero:</b> a real photo of Dr. Ayzenberg replaces the anatomical illustration. Remove its “Focused joint repair” card, the small round photo card and the eyebrow line.</li>
+    <li><b>Buttons:</b> Request My Visit With Dr. Ayzenberg (solid) and Call (outline) together in the hero, Your First Visit and the close. Show the hero Call button, which is in the page now but hidden.</li>
+    <li><b>Close:</b> one block with the address, hours and map. The separate “A clear plan starts with a real exam” block goes.</li>
+    <li><b>Header logo:</b> whether “Member of The Joint Preservation Center” stays is an open decision for Kyle and Mark. Build with the Iron Mountain logo alone unless they say otherwise.</li>
   </ul>
 
-  <h3>What this preview leaves out</h3>
+  <h3>Confirm before launch</h3>
   <ul>
-    <li><b>Patient videos.</b> The four slots (Bob, Sharon, John, the 6,000-mile patient) are labeled placeholders here. The video files are on the current page; the links are in the vault copy doc, not on this public preview.</li>
-    <li><b>The survey.</b> Request buttons open a note explaining what happens on the live page. Nothing is submitted.</li>
+    <li><b>Hours:</b> the site says 8 to 4; the office has also said 9 to 4. Emily confirms.</li>
+    <li><b>“Usually within a couple of weeks”</b> in the FAQ: Emily confirms with the office, or use “Our team gives you the date on your call” alone.</li>
+    <li><b>Knee page photo:</b> a second photo of Dr. Ayzenberg. Emily asks the office.</li>
+    <li><b>Survey order:</b> the contact-first Google copy waits on Kyle’s OK.</li>
   </ul>
 
-  <h3>Before this goes live</h3>
+  <h3>Before going live</h3>
   <ul>
-    <li><b>Hours.</b> The site says 8 to 4; the office has also said 9 to 4. Confirm with the office (Emily).</li>
-    <li><b>“Usually within a couple of weeks”</b> in the FAQ: confirm with the office, or use “Our team gives you the date on your call” alone.</li>
-    <li><b>Header lockup.</b> Kyle and Mark decide whether “Member of The Joint Preservation Center” stays.</li>
-    <li><b>Survey order.</b> The contact-first Google copy of the survey waits on Kyle’s OK.</li>
-    <li><b>Tracking.</b> Keep GTM-P3K4J5JX and the qualified-lead tag on the new page; every call link carries a position tag (header, hero, visit, close, address, sticky).</li>
-    <li><b>QA.</b> Run the funnel QA skill and check the built page at 390 and 1440 before switching the ads.</li>
+    <li>Angeles checks every page against this preview at 390 px and 1440 px.</li>
+    <li>Run the funnel QA skill on each page.</li>
+    <li>Test one submit per survey path (qualified, Medicare, not a fit) and confirm the <code>ty-qualified</code> conversion fires once in Google Tag Assistant.</li>
+    <li>Tap every call link on a phone, then switch each ad group’s final URL to its page.</li>
   </ul>
 </section>
 <script>
